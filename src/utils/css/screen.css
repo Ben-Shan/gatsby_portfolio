@@ -20,6 +20,7 @@ production stylesheet in assets/built/screen.css using gulp dev
 @import "components/hamburger.css";
 @import "components/animations.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 
 /* Main - Theme styles
 /* ---------------------------------------------------------- */
@@ -135,7 +136,7 @@ body {
 /* ---------------------------------------------------------- */
 
 .site-head {
-    position: relative;
+    position: sticky;
     z-index: 300;
     margin-top: -10px;
     font-size: 1.35rem;
@@ -197,11 +198,12 @@ body {
     display: block;
     padding: 10px;
     color: var(--color-base);
-    font-size: 2.1rem;
+    font-size: 3.5rem;
     line-height: 1em;
     font-weight: 700;
-    text-transform: uppercase;
+   /** text-transform: uppercase; **/
     letter-spacing: 1px;
+    font-family: 'Young Serif', serif;
 }
 
 .site-head-logo:hover {
@@ -405,6 +407,11 @@ body {
     background-size: cover;
     overflow: hidden;
     counter-increment: posts;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.post-card:hover {
+    box-shadow: 0px 8px 15px rgba(33, 33, 33, 0.418); /* This gives the shadow effect on hover */
 }
 
 @media (max-width: 700px) {
@@ -433,10 +440,11 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    color: #fff;
-    background: rgba(0,0,0,0.1);
+    color: #000;
+    background: rgba(255, 255, 255, 0.304);
     opacity: 1;
     transition: opacity 0.5s cubic-bezier(.33,0,.2,1);
+    font-size: 36px; 
 }
 
 .post-card.with-image .post-card-content {
@@ -525,7 +533,7 @@ body {
 }
 
 .post-content-excerpt {
-    margin: -2vw 0 3vw;
+    margin: -2vw 0 1vw;
     font-size: 2.2rem;
     line-height: 1.6em;
     color: var(--color-base);
@@ -539,9 +547,8 @@ body {
 }
 
 .post-content-image {
-    margin: 4vw 0;
     position: relative;
-    width: 75vw;
+    width: 100vw;
     min-width: 100%;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
@@ -656,6 +663,12 @@ body {
     transform: rotate(45deg);
 }
 
+.post-content-body img {
+    /* styles go here */
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
 .footnotes-sep {
     margin-bottom: 30px;
 }
@@ -719,3 +732,32 @@ body {
 .page-template .post-content-body h3 {
     text-align: center;
 }
+
+
+
+.tags-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3vw;
+  }
+
+  .gatsby-resp-image-figure {
+    margin: 0 !important; /* Replace 'desired-value' with your desired margin */
+    padding: 0 !important;
+  }
+
+  .gatsby-resp-image-wrapper {
+    margin: 1em !important;
+  }
+
+  .post-content-body p {
+    margin: 0 0 1.2em 0;
+  }
+
+  .profile-container {
+    display: flex;
+    justify-content: center;  /* centers children horizontally */
+    align-items: center;      /* centers children vertically */           /* takes the full viewport height */
+  }
+  

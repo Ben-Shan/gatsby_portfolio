@@ -9,11 +9,13 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
+    const siteSubtitle = this.props.data.site.siteMetadata.subtitle;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title={post.frontmatter.title}
+          subtitle={post.frontmatter.subtitle}
           description={post.frontmatter.description || post.excerpt}
         />
         <article
@@ -22,10 +24,27 @@ class BlogPostTemplate extends React.Component {
           <header className="post-content-header">
             <h1 className="post-content-title">{post.frontmatter.title}</h1>
           </header>
-
+          
           {post.frontmatter.description && (
             <p class="post-content-excerpt">{post.frontmatter.description}</p>
           )}
+
+          <div className="tags-container">
+                  {post.frontmatter.tags && post.frontmatter.tags.map(tag => (
+                    <span key={tag} style={{
+                      backgroundColor: "#EDEDED",
+                      color: '#2C2A29',
+                      fontFamily: 'Muli',
+                      borderRadius: "64px",
+                      padding: "5px 20px",
+                      margin: "5px",
+                      display: "inline-block",
+                      fontSize: "12px"
+                    }}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
 
           {post.frontmatter.thumbnail && (
             <div className="post-content-image">
@@ -61,6 +80,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        subtitle
         author
       }
     }
@@ -72,6 +92,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
         thumbnail {
           childImageSharp {
             fluid(maxWidth: 1360) {

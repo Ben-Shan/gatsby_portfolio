@@ -4,6 +4,7 @@ const siteConfig = require("./siteConfig")
 module.exports = {
   siteMetadata: {
     title: siteConfig.name,
+    subtitle: "Your Site Subtitle",
     author: siteConfig.author,
     description: siteConfig.description,
     siteUrl: urljoin(siteConfig.url, siteConfig.prefix),
