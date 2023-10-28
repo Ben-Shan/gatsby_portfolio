@@ -43,7 +43,7 @@ const Layout = props => {
           <div className="site-head-right">
             <div className="social-links">
               <a
-                href="https://www.linkedin.com/benshan"
+                href="https://www.linkedin.com/in/benshan"
                 title="LinkedIn"
                 target="_blank"
                 rel="noopener noreferrer"
