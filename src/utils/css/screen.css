@@ -201,10 +201,32 @@ body {
     font-size: 3.5rem;
     line-height: 1em;
     font-weight: 700;
-   /** text-transform: uppercase; **/
+    /** text-transform: uppercase; **/
     letter-spacing: 1px;
     font-family: 'Young Serif', serif;
 }
+
+/* For tablets and larger devices */
+@media (max-width: 1200px) {
+    .site-head-logo {
+        font-size: 3rem;
+    }
+}
+
+/* For small desktops and larger devices */
+@media (max-width: 992px) {
+    .site-head-logo {
+        font-size: 2.5rem;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .site-head-logo {
+        font-size: 2rem;
+    }
+}
+
 
 .site-head-logo:hover {
     text-decoration: none;
