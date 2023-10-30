@@ -80,8 +80,6 @@ Ethos recommendations, such as increasing the brand's 'human' touch is commendab
 
 While I'm skeptical about the rebranding, I hope I'm proven wrong. Nevertheless, this rebranding exercise offers insights into the complexities of large scale projects involving a wide group of people. I've refined these insights into key takeaways from this project management perspective that I will strive to implement for all future projects:
 
-<hr />
-
 - **Stakeholder Inclusion**:  Identify affected areas and include relevant members from the beginning. This should be as lean as possible to ensure efficient decision making.
 - **Open Communication**: Stakeholders should be updated when changes, milestones and updates occur to avoid surprises at the end.
 - **Feedback Loops**: Stakeholders need to be able to raise concerns and suggest changes as the project progresses.
