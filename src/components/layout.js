@@ -2,11 +2,12 @@ import React from "react"
 import { Link } from "gatsby"
 
 const Layout = props => {
-  const { title, children } = props
+  const { title, children, isHomepage } = props
   const [toggleNav, setToggleNav] = React.useState(false)
+
   return (
     <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>
-      <header className="site-head">
+      <header className={`site-head ${isHomepage ? 'homepage-header' : ''}`}>
         <div className="site-head-container">
           <a
             className="nav-burger"
@@ -24,7 +25,7 @@ const Layout = props => {
               </div>
             </div>
           </a>
-          <nav id="swup" class="site-head-left">
+          <nav id="swup" className="site-head-left">
             <ul className="nav" role="menu">
               <li className="nav-home" role="menuitem">
                 <Link to={`/`}>Home</Link>
@@ -32,14 +33,16 @@ const Layout = props => {
               <li className="nav-about" role="menuitem">
                 <Link to={`/about`}>About</Link>
               </li>
-
             </ul>
           </nav>
-          <div className="site-head-center">
-            <Link className="site-head-logo" to={`/`}>
-              {title}
-            </Link>
-          </div>
+          
+            <div className="site-head-center">
+              <Link className={`site-head-logo ${isHomepage ? 'site-head-logo-home' : ''}`} to={`/`}>
+                {title}
+              </Link>
+            </div>
+
+          
           <div className="site-head-right">
             <div className="social-links">
               <a
@@ -50,7 +53,6 @@ const Layout = props => {
               >
                 View CV
               </a>
-
               <a
                 href="https://www.linkedin.com/in/benshan"
                 title="LinkedIn"
@@ -59,11 +61,11 @@ const Layout = props => {
               >
                 LinkedIn
               </a>
-            
             </div>
           </div>
         </div>
       </header>
+
       <main id="site-main" className="site-main">
         <div id="swup" className="transition-fade">
           {children}

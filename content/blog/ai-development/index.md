@@ -46,6 +46,8 @@ The MVP version of Kiko is nearing completion and will be launched once the fina
 - **MVP Features**: Currently the user is able to log into the app using a Google account, render a personal map for the user to interact with. They can zoom down into small islands and regions and select any country or region that has a unique Alpha3 code (249 countries). They can select a country which changes the colour of it on the map and adds the country's name to the list.
 - **Pending Tasking**: Before the initial launch of Kiko, the following tasks need to be completed: Hosting the site and domain acquisition, Finalise account database and fix outstanding bugs (colour change and zoom smoothness). 
 
+![Kiko Demo Image](./kiko_demo.png "")
+
 <hr />
 
 ## 🔮 **The Path Forward**
@@ -56,6 +58,8 @@ Aside from completing the MVP version of Kiko, I have several other plans for th
     - **Focus View**: Allowing users to click into a country they've added and allow them to add images and notes about their trip to that country.
     - **Country Export**: Offer a 'share' feature which renders a stylized image of a country including personal dates and images from the user's trip that they can share to social media.
     - **AI recommender**: Use the ChatGPT API to offer a 'next best destination' based on past visited locations and on activity preferences (taken from processing of added images and added notes).
+
+![Future of Kiko](./kiko_future.png "")
 
 <hr />
 

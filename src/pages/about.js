@@ -141,7 +141,7 @@ const indexQuery = graphql`
       relativePath: { eq: "benshan.png" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 500) {
+        fluid(maxWidth: 2000) {
           ...GatsbyImageSharpFluid
         }
       }

@@ -96,6 +96,14 @@ module.exports = {
         icon: `content/assets/benshan.png`,
       },
     },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/  // Pointing to the assets directory
+        }
+      }
+    },
     `gatsby-plugin-netlify`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,

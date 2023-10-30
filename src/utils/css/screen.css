@@ -26,6 +26,10 @@ production stylesheet in assets/built/screen.css using gulp dev
 /* Main - Theme styles
 /* ---------------------------------------------------------- */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Muli', sans-serif;
     background: var(--color-bg);
@@ -53,7 +57,6 @@ body {
 /* ---------------------------------------------------------- */
 
 .site-wrapper {
-    padding: 3vw;
     min-height: 100vh;
 }
 @media (max-width: 850px) {
@@ -67,7 +70,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 13vw 0;
+    padding: 6vw 0 3vw 0;
     max-width: 70%;
     margin: auto;
     text-align: center;
@@ -139,9 +142,12 @@ body {
 .site-head {
     position: sticky;
     z-index: 300;
-    margin-top: -10px;
+    padding: 1vw 3vw 3vw 3vw;
+
     font-size: 1.35rem;
+
 }
+
 
 .site-head-container {
     display: flex;
@@ -188,7 +194,6 @@ body {
 }
 
 .site-head-center {
-    position: absolute;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -199,6 +204,20 @@ body {
     display: block;
     padding: 10px;
     color: var(--color-base);
+    font-size: 3.5rem;
+    line-height: 1em;
+    font-weight: 700;
+    /** text-transform: uppercase; **/
+    letter-spacing: 1px;
+    font-family: 'Young Serif', serif;
+}
+
+.site-head-logo-home {
+    flex-shrink: 0;
+    display: block;
+    padding: 10px;
+    color: var(--color-bg);
+    opacity: 0;
     font-size: 3.5rem;
     line-height: 1em;
     font-weight: 700;
@@ -418,6 +437,7 @@ body {
     display: flex;
     align-items: ;
     flex-wrap: wrap;
+    padding: 3vw;
 }
 
 .post-card {
@@ -794,4 +814,81 @@ body {
     text-align: left;
     margin-top: 2vh;
  }
- 
+
+ .hero {
+    display: flex;
+    flex-direction: column;  /* Stack children vertically */  /* Center children vertically */
+    padding-top: 10vh;
+    align-items: center;  /* Center children horizontally */
+    height: 100vh; 
+    width: 100vw;
+    background: linear-gradient(to bottom, var(--color-bg), #002B64);
+    position: relative; 
+    overflow: hidden; 
+    box-shadow: 0 8px 8px -6px rgba(0, 0, 0, 0.2);
+
+}@media (max-width: 850px) {
+    .hero {
+        margin-left: -6vw;
+    }
+}
+
+.herocontent {
+    justify-content: center;  /* Center children vertically */
+    padding-top: 5vh;
+
+}
+
+.hero-image {
+    width: 20%; /* This will make the image a third of its container's width */
+    display: block; /* This will remove any default margins/paddings around the image */
+    border-radius: 16px;
+    
+}
+
+.hero h1 {
+    font-size: 5rem;
+    font-family: var(--main-font);
+    color: #1d253c;
+}
+.hero-text {
+    transition: transform 0.3s, opacity 0.3s; /* For smooth transition */
+    font-size: 4rem;
+    font-family: 'Young Serif', serif !important; 
+    color: #1d253c;
+    opacity: 1;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+
+.hero-subtext {
+    width: 75%;
+    margin: 0 auto; /* This centers the text */
+    font-size: 1.8rem;
+    color: #1d253c;
+    font-weight:lighter;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.view-work-link {
+    text-align: center;
+    margin-top: 20vh; /* Adjust as necessary */
+}
+
+.view-work-link a {
+    color: #ffffff; /* Or whatever color you prefer */
+    border-bottom: 1px solid currentColor; /* simulates an underline */
+    text-decoration: none;
+    transition: all 1s;
+    font-size: 16px; /* Adjust size as necessary */
+    display: inline-flex;
+    align-items: center;
+}
+
+.view-work-link a:hover {
+    color:#1d253c;
+    border-color: transparent;
+
+}
