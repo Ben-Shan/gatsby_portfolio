@@ -32,6 +32,8 @@ The main solution goals I defined for the project were:
 - **Efficient and Informative:** Immediate feedback on the request's approval status or reasons for rejection.
 - **User-Centered Design:** Balancing the design for both typical use cases and unique scenarios.
 
+![Notes](./SA_notes.png "")
+
 <hr />
 
 ### 🛠 **Design Choices and Innovations:**
@@ -44,6 +46,9 @@ The main design hallmarks applied to each form were:
 - **Unique Components:** While many standard fields had previously been designed for our design system, this project necessitated the design of several new components to accommodate specific information requirements.
 - **Clear Communication:** Clarity in data requirements was paramount. Each question and message, both positive and negative, were meticulously worded to guarantee clear understanding. At the same time, brevity was maintained to prevent information overload.
 
+![Features](./SA_features.png "")
+
+
 <hr />
 
 ### 🎉 **Triumphant Outcomes:**
@@ -52,6 +57,8 @@ Although the development of these forms is still ongoing, the design phase has c
 - **Cost Efficiency:** Despite an initial projected development cost of hundreds of thosands, subsequent monthly savings are, and continue to be, significant.
 - **Call Reduction:** True to the project's objectives, we've observed a remarkable decline in calls—over 1000 fewer to the call center each month. This reduction translates to thousands of euros saved for the company monthly.
 - **External Validation:** On a design-specific note, the live Special Assistance form underwent an external UX audit, which it comfortably passed, receiving commendable scores and feedback.
+
+![Features](./SA_success.png "")
 
 <hr />
 

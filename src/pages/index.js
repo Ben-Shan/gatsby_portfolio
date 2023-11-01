@@ -68,7 +68,7 @@ const BlogIndex = ({ data }, location) => {
           </h2>
         </header>
       )}
-      <div className="post-feed" id="case-studies">
+      <div className="post-feed" id="case-studies" >
         {posts.map(({ node }) => {
           postCounter++
           return (
@@ -113,6 +113,7 @@ const indexQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            tags
             thumbnail {
               childImageSharp {
                 fluid(maxWidth: 1360) {
