@@ -600,6 +600,10 @@ body {
     width: 50%; 
     color: #fff;
     background-color: #1d253c;
+    display: flex;
+    flex-direction: column;   /* Stack children vertically */
+    justify-content: center;  /* Center children vertically */
+    align-items: center;      /* Center children horizontally */
   }@media (max-width: 700px) {
     
     .details {
@@ -615,8 +619,27 @@ body {
     text-decoration: none; /* To remove any underlines */
 }
 
-  
-  
+.details-button {
+    margin-top: 20px; /* Space it from other content */
+    padding: 10px 20px; /* Give it some padding */
+    border: 1px !important; /* Remove any default borders */
+    border-radius: 32px; /* Optional: give it rounded corners */
+    background-color: #252a3a; /* Choose a background color */
+    color: #FFF !important; /* Text color */
+    cursor: pointer; /* Makes it clear it's clickable */
+    transition: background-color 0.3s ease; /* Optional: Smooth color transition on hover */
+
+    display: flex;         /* Convert the button to a flex container */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;     /* Center the content vertically */
+}
+
+.details-button:hover {
+    background-color: #1f222f; /* Darken button color on hover */
+    border: 1px !important; /* Remove any default borders */
+    color: #FFF !important; /* Text color */
+}
+
 
 /* The rest of your styles should remain unchanged. */
 
@@ -1019,3 +1042,31 @@ body {
     padding: 5px 20px;
     font-size: 12px;
 }
+
+
+.back-to-top {
+    opacity: 0; /* Initially, the button is completely transparent */
+    transition: opacity 1s ease-in-out;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;           /* Initially hidden */
+    padding: 0 8px ;              /* Removed padding, since we're using width and height for sizing */
+    height: auto;
+    width: auto;
+    border: none;
+    border-color: #343b51;
+    background-color: #fff;  /* Background color */
+    color: #333;             /* Color of the emoji, changed to a darker color for contrast */
+    border-radius: 16px;      /* Makes it a circle */
+    text-align: center;      /* Center the emoji horizontally */
+    line-height: 50px;       /* Center the emoji vertically */
+    cursor: pointer;
+    z-index: 1000;           /* Keep the button above other elements */
+    transition: 0.3s;        /* Optional: For smooth hover effects */
+}
+
+.back-to-top:hover {
+    background-color: #eee;   /* Slightly lighter color on hover */
+}
+

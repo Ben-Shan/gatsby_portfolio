@@ -44,6 +44,7 @@ export default props => (
                 ))}
             </div>
         )}
+        <button className="details-button">View</button>
       </div>
     </Link>
   </article>

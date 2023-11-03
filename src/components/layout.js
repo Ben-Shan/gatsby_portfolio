@@ -5,6 +5,21 @@ const Layout = props => {
   const { title, children, isHomepage } = props
   const [toggleNav, setToggleNav] = React.useState(false)
 
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Listen for scroll events to show or hide the button
+window.addEventListener('scroll', function() {
+    const backToTopBtn = document.getElementById('backToTop');
+    if (window.scrollY > 2000) {
+      backToTopBtn.style.opacity = '1';
+  } else {
+      backToTopBtn.style.opacity = '0';
+  }
+});
+
+
   return (
     <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>
       <header className={`site-head ${isHomepage ? 'homepage-header' : ''}`}>
@@ -71,6 +86,9 @@ const Layout = props => {
           {children}
         </div>
       </main>
+
+      <button id="backToTop" className="back-to-top" onClick={scrollToTop}>Back to Top</button>
+
       <footer className="site-foot">
         &copy; {new Date().getFullYear()} <Link to={`/`}>{title}</Link>
       </footer>
