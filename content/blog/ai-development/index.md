@@ -89,4 +89,4 @@ Thank you for reading!
 
 <hr/>
 
-<div style="text-align: center; font-size: 0.8em;">Images created using DALL-E3 & Photoshop for this project.</div>
+<div style="text-align: center; font-size: 0.8em;">Kiko images & screenshots taken during project process. Images created using DALL-E3 & Photoshop for this project.</div>
