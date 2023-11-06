@@ -14,14 +14,14 @@ const Layout = props => {
     // This function is responsible for toggling the visibility of the back to top button
     function toggleBackToTopBtn() {
       const backToTopBtn = document.getElementById('backToTop');
-      if (window.scrollY > 2000) { // This value can be adjusted based on when you want the button to appear
+      if (window.scrollY > 3000) { // This value can be adjusted based on when you want the button to appear
         backToTopBtn.style.opacity = '1';
         backToTopBtn.style.display = 'block'; // Make the button visible
       } else {
         backToTopBtn.style.opacity = '0';
         // Set timeout to delay hiding the button to allow the opacity transition to finish
         setTimeout(() => {
-          if (window.scrollY <= 2000) {
+          if (window.scrollY <= 3000) {
             backToTopBtn.style.display = 'none';
           }
         }, 1000); // Adjust this to match your opacity transition time

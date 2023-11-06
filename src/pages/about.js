@@ -103,7 +103,7 @@ const AboutPage = ({ data }, location) => {
           </p>
           <h6>Need help?</h6>
           <p>
-            I am incredibly passionate about help people starting out in UX and need help or advice, if that's you shoot me a message and I will always help out how I can!
+            I am incredibly passionate about helping people starting out in UX and need help or advice, if that's you shoot me a message and I will always help out how I can!
            </p>
           <hr></hr>
           <p>
