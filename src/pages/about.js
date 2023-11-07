@@ -138,7 +138,7 @@ const indexQuery = graphql`
       }
     }
     smallPic: file(
-      relativePath: { eq: "benshan.png" }
+      relativePath: { eq: "benshancolour.png" }
     ) {
       childImageSharp {
         fluid(maxWidth: 2000) {

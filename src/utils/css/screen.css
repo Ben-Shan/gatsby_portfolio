@@ -194,9 +194,10 @@ body {
 }
 
 .site-head-center {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    position: absolute; /* Position the title absolutely to ensure it stays center */
+    left: 50%;
+    transform: translateX(-50%); /* This will center the title */
+    flex-grow: 0;
 }
 
 .site-head-logo {
@@ -206,7 +207,7 @@ body {
     color: var(--color-base);
     font-size: 3.5rem;
     line-height: 1em;
-    font-weight: 700;
+    font-weight: 700; 
     /** text-transform: uppercase; **/
     letter-spacing: 1px;
     font-family: 'Young Serif', serif;
@@ -374,6 +375,7 @@ body {
         z-index: auto;
         display: flex;
         justify-content: center;
+        opacity: 0;
     }
     .site-head-right {
         order: 3;

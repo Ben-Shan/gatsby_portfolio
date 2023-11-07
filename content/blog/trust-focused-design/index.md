@@ -14,9 +14,6 @@ The final project of the Masters requires the primary and secondary research of 
 
 While attempting to answer this research questions I conducted secondary research of trust design, usability design, satisfaction design, intent to use and COVID-19 infection trackers as well as primary research of the public's disposition to trust and their use and perception of COVID-19 infection trackers. With the results of the research, 7 Trust Focused Design Principles were established which will later be used to create prototypes of a trust focused COVID-19 infection tracker which will be tested against an prototype app which doesn't contain the trust principles. These tests on the prototypes will be used to answer the research question.
 
-## Focus Area
-User Research, Literature Research, User Experience Design
-
 ## Research
 
 The first stage of the project was an extensive literature review of all relevant areas that would relate to the research question. From this research a strong understanding of the literature surrounding the chosen topic was attained along with the further refining of the problem to be solved.

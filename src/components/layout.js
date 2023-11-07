@@ -78,6 +78,14 @@ const Layout = props => {
           <div className="site-head-right">
             <div className="social-links">
               <a
+                href="https://www.instagram.com/linesofshanjie"
+                title="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Design Insta
+              </a>
+              <a
                 href="/BenjaminShanahanCV2023.pdf"
                 title="View CV"
                 target="_blank"

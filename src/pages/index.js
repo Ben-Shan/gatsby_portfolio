@@ -66,7 +66,11 @@ const BlogIndex = ({ data }, location) => {
           <h2 className="page-head-title">
             Case Studies
           </h2>
-
+          <br></br>
+          <p>
+            Below are a series of case studies of projects and work I have completed while work in my career, during my Masters degree and from personal projects.
+            The case studies are themed and tagged in order to identify each project with key learnings and skills involved in the project.
+          </p>
         </header>
       )}
       <div className="post-feed" id="case-studies" >
