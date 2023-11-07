@@ -52,7 +52,11 @@ The main design hallmarks applied to each form were:
 <hr />
 
 ### 🎉 **Triumphant Outcomes:**
-Although the development of these forms is still ongoing, the design phase has concluded, and I continue to provide support to our developers. Despite being in progress, the positive impacts of this work are already evident. For instance, with the Special Assistance Form—our most extensive form and the first to undergo development—the following results have emerged:
+Although the development of these some of these forms is still ongoing, the design phase has concluded, and I continue to provide support to our developers. To show the magnitude of this project is difficult in a case study format, forms are extensively long pages with a lot of the complexity coming from the many specific scenarios which need to be detailed out, below is an example of a selection of some of the scenarios detailed for the 'Baggage Claim' form, I chose this as an example as many of the other forms have to many scenarios to easily detail:
+
+![BaggageClaim](./BaggageClaim_small.png "")
+
+Despite being in progress, the positive impacts of this work are already evident. For instance, with the Special Assistance Form—our most extensive form and the first to undergo development—the following results have emerged:
 - **Timely Execution:** The MVP for the main form, from initial requirements gathering through design, development, and deployment, was finalized in a mere 4 months.
 - **Cost Efficiency:** Despite an initial projected development cost of hundreds of thosands, subsequent monthly savings are, and continue to be, significant.
 - **Call Reduction:** True to the project's objectives, we've observed a remarkable decline in calls—over 1000 fewer to the call center each month. This reduction translates to thousands of euros saved for the company monthly.
@@ -81,3 +85,5 @@ Our recently developed forms are set to significantly enhance the passenger expe
 Together, these enhancements not only streamline user interactions but also optimize our call center's efficiency, forecasting substantial annual savings. As final development is still in process, we eagerly anticipate the transformative results these tools will bring—both for our valued customers and overall costs of providing this essential service. 
 
 The early success from these forms hints at the profound positive impact we expect from our complete suite of form designs. The future, with improved customer interactions, looks incredibly promising.
+
+![Suite of Forms](./FormSuite.png "Complete Suite of Updated Forms")

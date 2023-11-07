@@ -66,6 +66,7 @@ const BlogIndex = ({ data }, location) => {
           <h2 className="page-head-title">
             Case Studies
           </h2>
+
         </header>
       )}
       <div className="post-feed" id="case-studies" >
