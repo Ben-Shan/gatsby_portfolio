@@ -2,11 +2,10 @@ import Img from "gatsby-image";
 import React, { useState, useEffect } from "react";
 import { graphql, StaticQuery } from "gatsby"
 
-import Layout from "../components/homelayout"
+import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PostCard from "../components/postCard"
 
-import DividerIcon from '../assets/bordericons.svg';
 
 // import "../utils/global.scss"
 import "../utils/normalize.css"
@@ -45,14 +44,17 @@ const BlogIndex = ({ data }, location) => {
       
       <div className="hero-section">
         <div className="hero">
+          <Img
+                  fluid={data.smallPic.childImageSharp.fluid}
+                  className="kg-image"
+                  style={{ width: '250px', height: 'auto', transform: `scale(${scale})`, opacity: opacity }}
+                />
           <div className="herocontent">
             <h1 className="hero-text" style={{ transform: `scale(${scale})`, opacity: opacity }}>Benjamin Shanahan</h1>
-            <p className="hero-subtext" style={{ transform: `scale(${scale})`, opacity: opacity }}>Passionate designer with a love for creating amazing experiences and facilitating other’s potential </p>
-            <div class="hero-divider" style={{ transform: `scale(${scale})`, opacity: opacity }}>
-              <div class="hero-line"></div>
-              <DividerIcon className="hero-divider-svg"/>
-              <div class="hero-line"></div>
-            </div>
+            <p className="hero-subtext" style={{ transform: `scale(${scale})`, opacity: opacity }}>UX Product Designer passionate about creating delightful experiences to be used by everyone. Currently obsessed about using AI to expand the capacity of designers</p>
+          </div>
+          <div className="view-work-link">
+            <a href="#case-studies">View My Work</a>
           </div>
         </div>
 
@@ -64,6 +66,11 @@ const BlogIndex = ({ data }, location) => {
           <h2 className="page-head-title">
             Case Studies
           </h2>
+          <br></br>
+          <p>
+            Below are a series of case studies of projects and work I have completed while working in my career, during my Masters degree and from personal projects.
+            The case studies are themed and tagged in order to identify each project with key learnings and skills involved in the project.
+          </p>
         </header>
       )}
       <div className="post-feed" id="case-studies" >
