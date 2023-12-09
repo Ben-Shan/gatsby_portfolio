@@ -989,12 +989,11 @@ body {
 
  /* Initially hide the banner */
 .mobile-banner {
-    display: none !important;
+    display: none;
     background-color: #f2f2f2; /* or any color you prefer */
     color: #333; /* Text color */
     text-align: center;
     padding: 10px;
-    display: flex;
     align-items: center;
     border-radius: 32px;
   }
