@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import PostCard from "../components/postCard"
 
 import DividerIcon from '../assets/bordericons.svg';
+import MaintenanceIcon from '../assets/maintenance.svg';
 
 // import "../utils/global.scss"
 import "../utils/normalize.css"
@@ -42,7 +43,14 @@ const BlogIndex = ({ data }, location) => {
         title="All posts"
         keywords={[`blog`, `gatsby`, `javascript`, `react`]}
       />
-      
+      <div class="mobile-banner">
+      <MaintenanceIcon className="maintenance-svg"/>
+  <div class="banner-text">
+    <h2>Under Maintenance</h2>
+    <p>Please view on web for the best experience, but feel free to continue browsing on mobile!</p>
+  </div>
+</div>
+
       <div className="hero-section">
         <div className="hero">
           <div className="herocontent">

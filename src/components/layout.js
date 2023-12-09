@@ -69,7 +69,7 @@ const Layout = props => {
           </nav>
           
             <div className="site-head-center">
-              <Link className={`site-head-logo ${isHomepage ? 'site-head-logo-home' : ''}`} to={`/`}>
+              <Link className="site-head-logo"  to={`/`}>
                 {title}
               </Link>
             </div>
