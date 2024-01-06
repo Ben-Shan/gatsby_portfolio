@@ -1289,3 +1289,34 @@ body {
     background-color: #eee;   /* Slightly lighter color on hover */
 }
 
+
+.live-projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+}
+.colorless-div{
+    display: flex;
+    justify-content: center; 
+    padding-top: 10vh;
+    padding-left: 30vh;
+    padding-right: 30vh;
+    height: 20vh;
+    width: 60vw;
+    border-radius: 16px;
+    
+    background-image: url('/colorless-photo.png'); /* Path to your image */
+    background-size: cover;   /* Cover the entire div */
+    background-position: center; /* Center the image in the div */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+}
+.colorless-div:hover {
+    box-shadow: 0 16px 32px rgba(0, 4, 43, 0.605); /* Enhanced shadow on hover */
+    background-color: ; /* Example property to change */
+    transform: scale(1.01); /* Example property to change */
+  }

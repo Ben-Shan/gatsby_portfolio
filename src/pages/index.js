@@ -66,6 +66,21 @@ const BlogIndex = ({ data }, location) => {
 
       </div>
 
+      {/* New Section: Live Projects */}
+      <header className="page-head">
+        <h2 className="page-head-title">
+          Live Projects
+        </h2>
+      </header>
+      <div className="live-projects">
+      <a href="https://colorless.design" target="_blank" rel="noopener noreferrer">  
+      <div className="colorless-div">
+        
+      </div>
+        </a>
+      
+      </div>
+
       {/* <Bio /> */}
       {data.site.siteMetadata.description && (
         <header className="page-head">
