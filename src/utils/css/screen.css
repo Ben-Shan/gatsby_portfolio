@@ -136,7 +136,7 @@ body {
     background-color: #f8f8f8;
 }
 .site-main-home {
-    background-color: #002555;
+    background-color: var(--color-primary-navy);
 }
 
 .site-foot {

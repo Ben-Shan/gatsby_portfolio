@@ -8,13 +8,13 @@
 :root {
 
     /* Colours */
-    --color-primary: #1d253c;
+    --color-primary: #001837;
     --color-base: #131313;
     --color-border: #ddd;
     --color-bg: #f8f8f8;
 
     --color-beige: #EED9BD;
-    --color-primary-navy: #002555;
+    --color-primary-navy: rgb(8, 5, 62);
 
     /* Fonts */
     --font-sans-serif: 'Muli', sans-serif;
