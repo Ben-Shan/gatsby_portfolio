@@ -3,10 +3,10 @@ import { Link } from "gatsby";
 import Img from "gatsby-image";
 
 export default props => (
-  <article
+  <div
     className={`post-card ${props.postClass}`}
   >
-    <Link to={props.node.fields.slug} style={{ display: "block", color: "inherit", textDecoration: "none" }}>
+    <Link to={props.node.fields.slug} >
       {/* Image Container */}
       {props.node.frontmatter.thumbnail && (
         <div className="post-card-image">
@@ -27,5 +27,5 @@ export default props => (
         </p>
       </div>
     </Link>
-  </article>
+  </div>
 );

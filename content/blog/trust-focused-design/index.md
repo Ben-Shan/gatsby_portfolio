@@ -2,7 +2,7 @@
 title: Trust in Digital Epidemiology
 date: "2021-05-15"
 thumbnail: ./fyp_photo.png
-description: A research thesis answering the question - 'What is the impact of trust focused design on a user’s trust, usability, satisfaction and intent to use when using a contact tracing app?'
+description: 'What is the impact of trust focused design on a user’s trust, usability, satisfaction and intent to use when using a contact tracing app?'
 tags: ["Design Process","Achedemic Research", "Masters Thesis"]
 ---
 

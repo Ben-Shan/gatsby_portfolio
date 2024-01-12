@@ -62,9 +62,6 @@ const Layout = props => {
               <li className="nav-home" role="menuitem">
                 <Link to={`/`}>Home</Link>
               </li>
-              <li className="nav-about" role="menuitem">
-                <Link to={`/about`}>About</Link>
-              </li>
             </ul>
           </nav>
           
@@ -77,14 +74,6 @@ const Layout = props => {
           
           <div className="site-head-right">
             <div className="social-links">
-              <a
-                href="https://www.instagram.com/linesofshanjie"
-                title="Instagram"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Design Insta
-              </a>
               <a
                 href="/BenjaminShanahanCV2023.pdf"
                 title="View CV"

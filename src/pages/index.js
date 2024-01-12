@@ -58,8 +58,6 @@ const BlogIndex = ({ data }, location) => {
             <p className="hero-subtext" style={{ transform: `scale(${scale})`, opacity: opacity }}>Passionate designer with a love for creating amazing experiences and facilitating other’s potential </p>
             <div class="hero-divider" style={{ transform: `scale(${scale})`, opacity: opacity }}>
               <div class="hero-line"></div>
-              <DividerIcon className="hero-divider-svg"/>
-              <div class="hero-line"></div>
             </div>
           </div>
         </div>
@@ -80,6 +78,10 @@ const BlogIndex = ({ data }, location) => {
         </a>
       
       </div>
+
+      <div class="hero-divider">
+              <div class="hero-line"></div>
+            </div>
 
       {/* <Bio /> */}
       {data.site.siteMetadata.description && (

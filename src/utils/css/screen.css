@@ -107,11 +107,10 @@ body {
 
 .page-head-title {
     transition: transform 0.3s, opacity 0.3s; /* For smooth transition */
-    font-size: 5rem;
-    font-family: 'Lobster Two', cursive; 
-    font-style: italic;
-    font-weight: 700;
-    color: var(--color-bg);
+    font-size: 4rem;
+    font-family: var(--font-sans-serif);
+    font-weight: 900;
+    color: var(--color-beige);
     margin: 0;
 }
 @media (max-width: 500px) {
@@ -436,216 +435,7 @@ body {
 }
 
 
-/* Post Feed
-/* ---------------------------------------------------------- 
 
-.post-feed {
-    display: flex;
-    align-items: ;
-    flex-wrap: wrap;
-    padding: 3vw;
-}
-
-.post-card {
-    position: relative;
-    flex: 1 1 50%;
-    display: flex;
-    position: relative;
-    height: 35vw;
-    background: linear-gradient(135deg, #1f1f1f 0%, #111 100%) center center;
-    background-size: cover;
-    overflow: hidden;
-    counter-increment: posts;
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.post-card:hover {
-    box-shadow: 0px 8px 15px rgba(33, 33, 33, 0.418); 
-}
-
-@media (max-width: 700px) {
-    .post-card {
-        flex: 1 1 100%;
-        height: 70vw;
-    }
-}
-
-.post-card-large {
-    flex: 1 1 100%;
-}
-
-.post-card-link {
-    flex: 1 1 auto;
-    display: block;
-}
-
-.post-card-content {
-    flex: 1 1 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    color: #000;
-    background: rgba(255, 255, 255, 0.304);
-    opacity: 1;
-    transition: opacity 0.5s cubic-bezier(.33,0,.2,1);
-    font-size: 36px; 
-}
-
-.post-card.with-image .post-card-content {
-    opacity: 0;
-}
-@media (max-width: 700px) {
-  .post-card.with-image .post-card-content {
-      opacity: 1;
-  }
-}
-
-.post-card-link:hover .post-card-content {
-    opacity: 1;
-    transition: opacity 0.3s cubic-bezier(.33,0,.2,1);
-}
-
-.post-card-title {
-    margin: 0;
-    display: inline-block;
-    font-size: 3.4rem;
-    max-width: 70%;
-    text-align: center;
-    transition: all 0.3s cubic-bezier(.33,0,.2,1);
-}
-*/
-/*
-.post-feed {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 3vw;
-}
-
-.post-card {
-    position: relative;
-    flex: 1 1 50%;
-    height: 35vw;
-    overflow: hidden;
-    counter-increment: posts;
-    transition: all 1s ease-in-out;
-    background-color: #1d253c;
-}
-
-.post-card:hover {
-    box-shadow: 0px 8px 15px rgba(33, 33, 33, 0.418);
-}
-
-@media (max-width: 700px) {
-    .post-card {
-        flex: 1 1 100%;
-        height: 33vw;
-    }
-    .post-card-link {
-        opacity: 0;
-    }
-}
-
-.post-card-large {
-    flex: 1 1 100%;
-}
-
-.post-card-link {
-    flex: 1 1 auto;
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;  /* Start from the left side 
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    transition: left 1s ease;  /* This will slow down the movement of the image 
-    z-index: 1;
-}
-
-.post-card-link:hover {
-    left: 50%;  /* On hover, the left side of the image moves to the center of the container 
-}
-
-
-.post-card-content {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    color: #000;
-    background: rgba(255, 255, 255, 0.304);
-    font-size: 36px;
-}
-
-.post-card:hover .post-card-link {
-    left: -50%;  /* Move the image to the left on hover 
-}
-
-.post-card-title {
-    margin: 0;
-    display: inline-block;
-    font-size: 3.4rem;
-    max-width: 70%;
-    text-align: center;
-    transition: all 1s cubic-bezier(.33,0,.2,1);
-}
-
-.details {
-    position: absolute;
-    top: 50%;
-    right: 0; 
-    transform: translateY(-50%);
-    text-align: center;
-    z-index: 0;
-    width: 50%; 
-    color: #fff;
-    background-color: #1d253c;
-    display: flex;
-    flex-direction: column;   /* Stack children vertically 
-    justify-content: center;  /* Center children vertically 
-    align-items: center;      /* Center children horizontally 
-  }@media (max-width: 700px) {
-    
-    .details {
-        right: 50%; /* Adjust to center 
-        transform: translate(50%, -50%); /* Adjust to center along with translateY 
-        width: 100%; /* Take full width 
-        padding-right: 0; /* Remove padding on the right 
-    }
-}
-  
-  .details a {
-    color: inherit; /* This ensures the anchor tags within .details will have the same color as .details 
-    text-decoration: none; /* To remove any underlines 
-}
-
-.details-button {
-    margin-top: 20px; /* Space it from other content 
-    padding: 10px 20px; /* Give it some padding 
-    border: 1px !important; /* Remove any default borders 
-    border-radius: 32px; /* Optional: give it rounded corners 
-    background-color: #252a3a; /* Choose a background color 
-    color: #FFF !important; /* Text color 
-    cursor: pointer; /* Makes it clear it's clickable 
-    transition: background-color 0.3s ease; /* Optional: Smooth color transition on hover 
-
-    display: flex;         /* Convert the button to a flex container 
-    justify-content: center; /* Center the content horizontally 
-    align-items: center;     /* Center the content vertically 
-}
-
-.details-button:hover {
-    background-color: #1f222f; /* Darken button color on hover 
-    border: 1px !important; /* Remove any default borders 
-    color: #FFF !important; /* Text color 
-}
-*/
 
 .post-feed {
     display: flex;
@@ -693,7 +483,7 @@ body {
 
   
   .post-card-image {
-    height: 50%; /* Half of the card's height */
+    height: auto;
     overflow: hidden; /* To handle cases where image is larger than the container */
   }
   
@@ -708,11 +498,11 @@ body {
   }
   
   .post-card-title {
-    font-size: 2em; /* Adjust the font size as per your design */
+    font-size: 1.5em; /* Adjust the font size as per your design */
     font-weight: bold;
-    font-family: 'Lobster Two', cursive; 
-    font-style: italic;
-    font-weight: 700;
+    text-align: center;
+    font-family: var(--font-sans-serif);
+    font-weight: 900;
     color: var(--color-beige);
     margin-bottom: 1vh;
     margin-top: 0;
@@ -720,10 +510,10 @@ body {
   
   .post-card-description {
     font-size: 1em; /* Adjust the font size as per your design */
-    color: var(--color-bg); /* Adjust the color as per your design */
+    color: var(--color-beige); /* Adjust the color as per your design */
+    text-align: center;
+    overflow: hidden;
   }
-  
-
 
 
 /* Post Content
@@ -1029,9 +819,10 @@ body {
  .hero {
     display: flex;
     flex-direction: column;  /* Stack children vertically */  /* Center children vertically */
-    padding-top: 0vh;
+    padding-top: 10vh;
     align-items: center;  /* Center children horizontally */
-    height: auto; 
+    justify-content:space-evenly;
+    height: 80vh; 
     width: 100vw;
     position: relative; 
     overflow: hidden; 
@@ -1043,11 +834,15 @@ body {
 }
 
 .herocontent {
-    justify-content: left;  /* Center children vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  /* Center children vertically */
     width:100vw;
     padding-top: 5vh;
     padding-left: 20vh;
     padding-right: 20vh;
+    
 
 }
 /* Adjustments for mobile devices */
@@ -1067,7 +862,7 @@ body {
 }
 
 .hero h1 {
-    font-size: 10rem;
+    font-size: 12rem;
     color: var(--color-beige);
 }
 .hero-text {
@@ -1078,18 +873,18 @@ body {
     font-weight: 700;
     color: var(--color-beige);
     opacity: 1;
-    text-align: left;
+    text-align: center;
     margin-top: 2vh;
     margin-bottom: 1vh;
 }
 
 .hero-subtext {
     font-family: 'Montserrat', sans-serif;
-    width: 75%;
+    width: 60vw;
     font-size: 2.2rem;
     color: var(--color-beige);
     font-weight:400;
-    text-align: left;
+    text-align: center;
     margin-top: 3vh;
     line-height: 150%;
 }
@@ -1117,6 +912,7 @@ body {
     width: 100%;
     margin-top:10vh;
     margin-bottom: 10vh;
+
   }
   
   .hero-line {
@@ -1124,7 +920,11 @@ body {
     flex: 1; /* Makes lines take up available space */
     height: 2px; /* Adjust as per your design */
     background-color: var(--color-beige); /* Your line color */
+    opacity: 50%;
+    margin-left: 20vw;
+    margin-right: 20vw;
   }
+
   
  /* Existing styles for .hero-divider-svg */
 .hero-divider-svg {
@@ -1317,6 +1117,5 @@ body {
 }
 .colorless-div:hover {
     box-shadow: 0 16px 32px rgba(0, 4, 43, 0.605); /* Enhanced shadow on hover */
-    background-color: ; /* Example property to change */
     transform: scale(1.01); /* Example property to change */
   }

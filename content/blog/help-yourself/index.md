@@ -1,12 +1,10 @@
 ---
 title: "'Help Yourself'"
+date: "2024-01-15"
 thumbnail: ./SA_thumbnail.png
 description: "Empowering Users through Automated Requests"
 tags: ["Long Term Project","Project Management", "Intuitive Design"]
 ---
-<div class="kg-card kg-image-card kg-width-full">
-
-</div>
 
 ### 🚀 **The Challenge:**
 Every month, Aer Lingus handles thousands of form requests, including everything from special assistance and special meals to refunds and missing bag retrival, essential requests for many passengers to be able to fly and others where the reputation of the company rests on the response received.
