@@ -3,85 +3,116 @@ title: "'Help Yourself'"
 date: "2024-01-15"
 thumbnail: ./SA_thumbnail.png
 description: "Empowering Users through Automated Requests"
-tags: ["Long Term Project","Project Management", "Intuitive Design"]
+tags: ["Design Process","Project Management", "Intuitive Design"]
 ---
+## Project Premise & Objectives
 
-### 🚀 **The Challenge:**
-Every month, Aer Lingus handles thousands of form requests, including everything from special assistance and special meals to refunds and missing bag retrival, essential requests for many passengers to be able to fly and others where the reputation of the company rests on the response received.
+- **Challenge:** Every month, Aer Lingus received thousands of requests covering a wide array of topics including refunds, assistance, missing luggage, and more.
+- **Legacy System Issues:** The previous system required manual handling of each request by customer service, leading to delays and inefficiency, costing the company significantly.
+- **Objective:** Develop a suite of intelligent forms to handle all passenger requests, automating the process as much as possible for quick, if not immediate, responses.
 
-Prior to this work, the process to a request required customer service manually handling each request which could take serveral days and would sometimes require a follow up phone call to gather additional information. This process left the user uncertain and anxious and was incredibly inefficient and costly for the customer service team.
+## Role
 
-![The of air travel for some](./SA_Img_1.png "Air travel can be challenging for some without support")
+- **Position:** Product Designer
+- **Responsibilities:** 
+  - Leading interface and interaction design of all forms.
+  - Collaborating with UX Researchers, Product Managers, Business Analysts, Product Owners, Developers, and Stakeholders.
+  - Extensive stakeholder management, information gathering, and some research.
+  - Becoming a source of truth for requirements and status updates due to the project's complexity and scale.
 
-<hr />
+## Timeline
 
-### 🔍 **Pinpointing the Issues:**
-- **Delayed Clarity for Passengers:** Users remained uncertain about their request status for an undefined period.
-- **Reliance on Calls:** Many modern users want to avoid phone communication and expect to be able to handle their issues online. All users would rather complete a request in one action, not a two part information gathering process.
-- **Company Strain:** This process was highly cost inefficient and time consuming for the customer service team.
+- **Duration:** 1 year
+- **Process:** 
+  - Tackling one form at a time through a scoped process:
+        1. Kick Off & Initial Planning
+        2. UX Research
+        3. Requirements Gathering
+        4. Iterative Design
+        5. Shareout
+        6. Hand off to Developers
+        7. Support Developers
 
-<hr />
+## Project Challenges
 
-### 💡 **The Solution: A Suite of Comprehensive Request Forms**
-The decided solution was to recreate the existing forms to make them more user friendly and as automated as possible so that users would know upon submission whether their request would be approved or not. Additionally, we aimed to merge as many of the existing forms as possible to reduce the overall number of forms. Significant work was also carried out on the signposting to the forms on the site to ensure users could find the correct form easily. 
+- Creating various complex forms.
+- In-depth information gathering and retention.
+- Bespoke design for each form based on unique requirements.
+- Managing a large number of stakeholders, often unique to each form.
+- Representing the UX team as a principal.
+- Sharing the responsibility of overall project management.
 
-The main solution goals I defined for the project were:
-- **Dynamic and Progressive:** Using various design techniques to present only relevant questions and information to the user when they need it.
-- **Efficient and Informative:** Immediate feedback on the request's approval status or reasons for rejection.
-- **User-Centered Design:** Balancing the design for both typical use cases and unique scenarios.
+## Process
 
-![Notes](./SA_notes.png "")
+- **Approach:** Consistent process for each form, scaled according to the form’s needs.
+- **Total Forms:** 14
 
-<hr />
+### Example - Special Assistance Form:
 
-### 🛠 **Design Choices and Innovations:**
-Each form required its own unique design to address the specific requirements of the request. Additionally, the design considered the user's expectations and the mindset they bring when approaching the form. Delving into the nuances of each form would be extensive. However, the design methodology adopted for each form remained consistent. 
+#### UX Brief Agreement:
+- As with every form project and all projects I carry out, I defined the scope of the work required and agreed the with the Product Manager and other stakeholders. This includes timelines, inscope features and more.
 
-The main design hallmarks applied to each form were:
-- **Progressive Disclosure:** Questions are revealed efficiently as the user progresses. This approach prevents the user from being overwhelmed by concealing the form's full extent, which can encompass up to 25 questions.
-- **Input Selection:** The design emphasizes the selection of optimal input types for varied information. Additionally, the order of fields was structured intuitively for user ease.
-- **Error Management:** Intuitive and informative error messages were implemented. This ensures that users understand what information is needed, can easily identify their mistakes, can recognize why any issues occurring during the process have happened and, importantly, know when their request has been successfully submitted.
-- **Unique Components:** While many standard fields had previously been designed for our design system, this project necessitated the design of several new components to accommodate specific information requirements.
-- **Clear Communication:** Clarity in data requirements was paramount. Each question and message, both positive and negative, were meticulously worded to guarantee clear understanding. At the same time, brevity was maintained to prevent information overload.
+#### UX Plan:
+- From the UX Brief, while working with the UX Researcher, we formed a UX Plan detailing the required steps and tasks we needed to follow in order to achieve the agreed UX Brief goals. These steps are broken into UX Research and UX Design, my responsibility was to assist in aspects of the Research and complete the Design segment. The steps detailed in the UX Plan align to the bullet points in the sections below.
 
-![Features](./SA_features.png "")
+#### UX Research:
+- My contribution to Research:
+    - Discussions with Experts & Stakeholders
+    - Form design best practices
+    - Defining Scenarios
+- Additional Research conducted:
+    - Traffic and feedback analysis from current forms
+    - Identification of touchpoints, navigation, and signposting
 
+![SA Flow diagram](./SAflow.png "Special Assistance Flow Diagram")
 
-<hr />
+#### Ideation & Design:
+**Research Review:**
+- Once the research had been completed, I began reviewing it, ensuring that once I began ideation I would have a solid understanding of the context I was building for.
 
-### 🎉 **Triumphant Outcomes:**
-Although the development of these some of these forms is still ongoing, the design phase has concluded, and I continue to provide support to our developers. To show the magnitude of this project is difficult in a case study format, forms are extensively long pages with a lot of the complexity coming from the many specific scenarios which need to be detailed out, below is an example of a selection of some of the scenarios detailed for the 'Baggage Claim' form, I chose this as an example as many of the other forms have to many scenarios to easily detail:
+**Prototyping and Iteration:**
+- I began my ideation stage by creating and adapting components to cover all required scenarios for the defined goals, for some field this was simple, however for more complex information gather fields which needed to handle outlier scenarios and unique situations, this was more complex, for example, although not used in the Special Assistance form, the 'Add receipt component' was challenging to create, ensuring it gathered the required information from the user, making it intuitive and easy for the user to add the details while also allowing for users to add several receipts without hinder those who didn't need that.
 
-![BaggageClaim](./BaggageClaim_small.png "")
+![Receipt Components](./receiptcomponent.png "Receipt Component")
 
-Despite being in progress, the positive impacts of this work are already evident. For instance, with the Special Assistance Form—our most extensive form and the first to undergo development—the following results have emerged:
-- **Timely Execution:** The MVP for the main form, from initial requirements gathering through design, development, and deployment, was finalized in a mere 4 months.
-- **Cost Efficiency:** Despite an initial projected development cost of hundreds of thosands, subsequent monthly savings are, and continue to be, significant.
-- **Call Reduction:** True to the project's objectives, we've observed a remarkable decline in calls—over 1000 fewer to the call center each month. This reduction translates to thousands of euros saved for the company monthly.
-- **External Validation:** On a design-specific note, the live Special Assistance form underwent an external UX audit, which it comfortably passed, receiving commendable scores and feedback.
+**Scenario Flows Creation:**
+- Once I have create the components, I began constructing all the scenario flows that we had defined in our research phase. A large aspect of this was designing how the form would reveal itself and in what order the questions needed to be presented. The form needed to reveal itself in a way that it wouldn't overwhelm the user while tasking the user with enough so that it didn't feel any more tedious than it needed to be. It was also crutial to architect the forms so that it would ask the user the relevant questions to their scenarios, not asking redundant questions and not missing any relevant ones.
+- A flow was required for every possible scenario and due to the complexity and 'self-service' nature of the goal that was set, this meant there were several flows for each form.
+
+![BaggageClaim](./BaggageClaim_small.png "Scenario Flow Examples")
+
+**Error & Recovery Scenario Definition:**
+- Once the flows were created, reviewed and refined, I began covering all error states that the form required and ensuring a way out for the user in that scenario to make sure that, even when the form couldn't solve the user's issue it would always point the user to a possible remedy.
+- For this stage I worked closely with copy writers to ensure the messaging accurately displayed to sentiment and information needed in an efficient way.
+
+![Error component](./errorscenario.png "Error Handling & Recovery")
+
+**Stakeholder Reviews & Refinement:**
+- Continual stakeholder check-ins throughout the process was a crucial part when designing the forms. At each stage, be it component design or flow layouts, I regularly looked for feedback and input put from relevant stakeholders to ensure I was continually aligned with the set plan and was making progress to the end goal.
+- Stakeholder reviews were also crucial at the completion of each form. Once I had created all flows, error states and unique scenarios I would organise a large shareout, or several smaller shareouts, with relevant stakeholders. This would include, product managers, business analysts, developers, product owners, the head of UX and sometimes operations or legal representatives. These shareouts, although sometimes challenging were invaluable to the process. I don't think there was a single end-shareout that did not result in discussions and changes to the process or end designs. Often a humbling experience, these shareouts continually reminded me of the value of colaboration and input from other experts and the value that their diversity of their experiences could contribute to their end product.
+
+![Feedback image](./feedback.png "Feedback Session")
+
+#### Deliver & Report:
+**Tech Solution Explanation & Handover:**
+- Once agreement had been reached between the key stakeholders that the goal agreed at the beginning of the project were achieved I conducted additional shareouts with the developers who would be creating the live product. During these shareouts I would explain the solution and specific interactions and answer any questions they had about the solution.
+- Although sometimes additional iterations of the design would need to be conducted to alter the designs due to technical limitations, these occurances were rare as I would continually make a strong effort to involve representatives from the development teams early on in the process.
+
+**Developer Support During Development:**
+- Once the solution was handed off, the developers would begin their process. During this time I would often need to take calls and answer emails regarding specifics for of the design as it was being developed. Additionally as sections were completed I joined demos of the finished product and shared feedback and encouragement regarding the work that was completed.
+
+## Results
+
+**Successfully completed forms**
+- The project has successfully concluded the design phase for all 14 forms with all detailed flows and scenarios which were required handed off to development. Although my design stage is completed I continue to support the developers during the development process and will continue to do so until all forms are live.
+
+**Reduced call volume**
+- A key achievement is the significant reduction in call volume, particularly evident with the Special Assistance Form. This form, being the most extensive and the first in development, has contributed to over 1000 fewer calls to the call center each month. This call reduction will significantly increase when all forms are live.
+
+**Significant cost savings**
+- The project has been cost-efficient, with savings far exceeding initial projections. This efficiency is highlighted by the Special Assistance Form, where despite high development costs, the monthly savings have been substantial. Once the entire suite of forms is live, they are on track to save the company on average 1 million euro every year.
+
+**Comprehensive UX Audit**
+- The Special Assistance Form underwent an external UX audit and passed comfortably, receiving positive scores and feedback. This validates the design and functionality of the form.
 
 ![Features](./SA_success.png "")
-
-<hr />
-
-### 🤝 **Stakeholder & Project Management:**
-With the size of this project to brought multifaceted demands beyond design, I became an indispensable asset for the team, not just in design but in realms that required a deeper understanding of business, legal, and technical aspects. Due to the size and urgency of this project, the business side of the team we overwhelmed allowing for an opportunity for me to prop up the project management in the following ways:
-
-- **Depth of Knowledge:** I routinely engaged in in-depth discussions about business rules for each form, helping to uncover previously overlooked limitations and requirements. This proactive approach made me a trusted reference point for product owners and developers regarding design decisions, business considerations, and legal ramifications.
-
-- **Technical Adaptability:** Venturing into areas beyond my typical scope, I grew a general grasp of the developer's workings and their implementation of third party APIs used in our forms. This not only bolstered the design aspect but also provided the team with foresight into potential technical limitations, ensuring a more holistic development approach.
-
-- **Proactive Communication:** Recognizing the importance of staying updated, I maintained open channels of communication with key stakeholders. Whether it was the project manager, UX researcher, product owner, or developers, my involvement in meetings and discussions ensured I was always informed, allowing me to make well-rounded decisions and provide valuable feedback while also acting as a holistic knowledge source for others.
-
-These endeavors not only strengthened the project's foundation but also fortified my relationships within the team, emphasizing the importance of a UX designer's role in modern project management.
-
-<hr />
-
-### 🔮 **Moving Forward:**
-Our recently developed forms are set to significantly enhance the passenger experience. Be it some forms aiming to reduce anxiety for travelers looking for support or other forms working to expedite and simplify the process for users seeking information or reimbursements. 
-
-Together, these enhancements not only streamline user interactions but also optimize our call center's efficiency, forecasting substantial annual savings. As final development is still in process, we eagerly anticipate the transformative results these tools will bring—both for our valued customers and overall costs of providing this essential service. 
-
-The early success from these forms hints at the profound positive impact we expect from our complete suite of form designs. The future, with improved customer interactions, looks incredibly promising.
-
-![Suite of Forms](./FormSuite.png "Complete Suite of Updated Forms")
