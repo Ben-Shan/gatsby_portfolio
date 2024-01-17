@@ -467,6 +467,7 @@ body {
     height: 50vh;
     margin-bottom: 5vh; /* Space at the bottom of each card */
     transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+    background-color: var(--color-primary);
 }
 /* For mobile devices */
 @media (max-width: 768px) {
