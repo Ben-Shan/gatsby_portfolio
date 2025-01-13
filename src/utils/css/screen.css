@@ -869,7 +869,7 @@ body {
 .hero-text {
     transition: transform 0.3s, opacity 0.3s; /* For smooth transition */
     font-size: 5rem;
-    font-family: 'Lobster Two', cursive; 
+    font-family: 'Muli', sans-serif;
     font-style: italic;
     font-weight: 700;
     color: var(--color-beige);
