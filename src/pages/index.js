@@ -54,7 +54,7 @@ const BlogIndex = ({ data }, location) => {
       <div className="hero-section">
         <div className="hero">
           <div className="herocontent">
-            <h1 className="hero-text" style={{ transform: `scale(${scale})`, opacity: opacity }}>Benjamin Shanahan</h1>
+            <h1 className="hero-text" style={{ transform: `scale(${scale})`, opacity: opacity }}>BENJAMIN SHANAHAN</h1>
             <p className="hero-subtext" style={{ transform: `scale(${scale})`, opacity: opacity }}>Passionate designer with a love for creating amazing experiences and facilitating other’s potential </p>
             <div class="hero-divider" style={{ transform: `scale(${scale})`, opacity: opacity }}>
               <div class="hero-line"></div>
