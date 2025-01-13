@@ -78,12 +78,12 @@ const BlogIndex = ({ data }, location) => {
         </a>
       
       </div>
-
+{/*
       <div class="hero-divider">
               <div class="hero-line"></div>
             </div>
 
-      {/* <Bio /> */}
+      
       {data.site.siteMetadata.description && (
         <header className="page-head">
           <h2 className="page-head-title">
@@ -104,6 +104,7 @@ const BlogIndex = ({ data }, location) => {
           )
         })}
       </div>
+      */}
     </Layout>
   )
 }
