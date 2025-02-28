@@ -6,8 +6,9 @@ exports.createPages = async ({ actions }) => {
 
   createRedirect({
     fromPath: "/payroll/*",
-    toPath: "unique-banoffee-792189.netlify.app",
+    toPath: "https://unique-banoffee-792189.netlify.app/:splat",
     isPermanent: true,
+    redirectInBrowser: true,
     force: true,
   });
 };
