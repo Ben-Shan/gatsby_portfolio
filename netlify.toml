@@ -1,5 +1,5 @@
 [[redirects]]
 from = "/payroll/*"
-to = "unique-banoffee-792189.netlify.app"
+to = "https://unique-banoffee-792189.netlify.app/:splat"
 status = 200
 force = true
