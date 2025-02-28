@@ -2,6 +2,7 @@ const urljoin = require("url-join")
 const siteConfig = require("./siteConfig")
 
 module.exports = {
+  pathPrefix: "/payroll",
   siteMetadata: {
     title: siteConfig.name,
     subtitle: "Your Site Subtitle",
