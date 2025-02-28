@@ -1,6 +1,17 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+exports.createPages = async ({ actions }) => {
+  const { createRedirect } = actions;
+
+  createRedirect({
+    fromPath: "/payroll/*",
+    toPath: "unique-banoffee-792189.netlify.app",
+    isPermanent: true,
+    force: true,
+  });
+};
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
