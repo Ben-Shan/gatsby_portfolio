@@ -1,0 +1,5 @@
+[[redirects]]
+from = "/payroll/*"
+to = "unique-banoffee-792189.netlify.app"
+status = 200
+force = true
